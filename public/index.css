@@ -1,11 +1,12 @@
 body {
 	font-family: arial;
 	max-width: 1200;
-	background-image: url("aloe.jpg");
+	color: white;
+	background-image: url("houseplants.jpg");
 	background-size: cover;
 }
 button {
-	border-radius: 5px;
+	border-radius: 2px;
 	width: 45%;
 	padding: 10px;
 	margin: 3px;
@@ -13,23 +14,51 @@ button {
 }
 
 input[type=submit]{
-	border-radius: 5px;
+	border-radius: 2px;
 	padding: 10px;
 	margin: 3px;
 	font-family: arial;
+	background-color: #c9d6cf;
+}
+input[type=text] {
+	border-radius: 2px;
+	width: 45%;
+	padding: 10px;
+	margin: 3px;
+	font-family: arial;
+	background-color: #eaf7f0;
+}
+
+#idDropdown {
+	border: none;
+	width: 45%;
+	border-radius: 2px;
+	padding: 10px;
+	font-family: arial;
+	background-color: #c9d6cf;
+}
+.workspace_id {
+	margin-bottom: 5px;
+}
+
+h1, h4 {
+	color: #94a39b;
+}
+
+h4{
+	margin: 0px;
+}
+select {
+	font-family: arial;
+	margin-bottom: 12px;
 }
 .buttons {
 	width: 33%;
 	margin-bottom: 50px;
 }
 
-.shutdown {
-	background-image: url("aloe.jpg");
-	background-size: cover;
-}
-
 .ficuselastica {
-	background-image: url("ficuselastica.jpg");
+	background-image: url("main.jpg");
 	background-size: cover;
 }
 
@@ -39,7 +68,22 @@ input[type=submit]{
 }
 
 .snakeplant {
-	background-image: url("snakeplant.jpg");
+	background-image: url("snakeplant2.jpg");
 	background-size: cover;
 
+}
+
+.one button {
+	background-color: #b0c999;
+}
+.one input[type=submit] {
+	background-color: #bbc999;
+}
+
+.two button {
+	background-color: #99c999;
+}
+
+.three button {
+	background-color: #99c9ac;
 }

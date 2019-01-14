@@ -3,9 +3,9 @@
 <head>
 	<title>Plantz</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="/index.js"></script>
+	<script src="index.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
-	<link rel=stylesheet type="text/css" href="/index.css">
+	<link rel=stylesheet type="text/css" href="index.css">
 	<!-- Intercom JS Library -->
 	<script>
     (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;
@@ -15,13 +15,14 @@
 </head>
 <body>
 	<h1 id="test">Plantville</h1>
-<!-- 	<div class="buttons workspace_id">
-		Select a workspace: <select id="idDropdown"> 
+		<div class="buttons workspace_id">
+		<h4>Select a workspace:</h4> <select id="idDropdown"> 
+			<option value="-">-</option>
 			<option value="qrhcqgez">Annie</option>
-			<option value="rnkl5zw9">CS Mappe</option> -->
-			
+			<option value="rnkl5zw9">CS Mappe</option>
 		</select>
-		<div class="add_id">What's your app ID?<form id="idForm">
+
+		<div class="add_id"><h4>Or enter your own app id:</h4><form id="idForm">
 			<input type="text" name="appId" id="appId">
 			<input type="submit" name="submit" id="submit" value="Submit app_id">
 		</form>
@@ -29,7 +30,7 @@
 </div>
 
 
-	<div class="buttons">
+	<div class="buttons one">
 		<button id="boot_lead">Boot Lead</button>
 		<button id="shutdown">Shutdown</button>
 		<button id="sansevieria_button">Boot Sansevieria</button>
@@ -40,7 +41,7 @@
 		<button id="segment_page_lead">Segment page() [qrhcqgez]</button>
 	</div>
 			<!-- <button id="apibutton">Get a conversation</button> -->
-	<div class="buttons">
+	<div class="buttons two">
 		<button id="update_button">Update with no params</button>
 		<button id="updateWithTime_button">Update with current time</button>
 		<button id="invited_friend_button">Track Event "invited_friend"</button>
@@ -50,7 +51,7 @@
 		</form>
 		
 	</div>
-	<div class="buttons">
+	<div class="buttons three">
 		<button id="hide_messenger">Hide the Messenger</button>
 		<button id="show_messenger">Show the Messenger</button>
 		<button id="show_Messages">Show Messages</button>

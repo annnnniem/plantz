@@ -15,6 +15,12 @@ $("#idForm").submit(function(event){
 	console.log($app_id);
 });
 
+$("#idDropdown").change(function(){
+	event.preventDefault();
+	$app_id = $(this).val();
+	console.log($app_id);
+});
+
 $("#boot_lead").click(function(){
 	Intercom('boot', {app_id: $app_id});
 	console.log("lead booted")
@@ -22,8 +28,6 @@ $("#boot_lead").click(function(){
 
 $('#shutdown').click(function(){
 	Intercom('shutdown');
-	this.className = '';
-
 });
 
 // can i DRY this out? 
@@ -34,7 +38,7 @@ $('#sansevieria_button').click(function(){
 		name: "Sansevieria Plant",
 		user_id: "plant1"
 	}
-	$("body").addClass('snakeplant');
+	$("body").toggleClass('snakeplant');
 	Intercom('boot', settings);
 });
 
@@ -45,7 +49,7 @@ $('#tradescantia_button').click(function(){
 		name: "Tradescantia Plant",
 		user_id: "plant2"
 	}
-	$("body").addClass('tradescantia')
+	$("body").toggleClass('tradescantia')
 	Intercom('boot', settings);
 });
 
@@ -56,7 +60,7 @@ $('#ficus_elastica_button').click(function(){
 		name: "Ficus Elastica Plant",
 		user_id: "plant3"
 	}
-	$("body").addClass('ficuselastica')
+	$("body").toggleClass('ficuselastica')
 	Intercom('boot', settings);
 });
 

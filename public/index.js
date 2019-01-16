@@ -28,6 +28,12 @@ $("#boot_lead").click(function(){
 
 $('#shutdown').click(function(){
 	Intercom('shutdown');
+	if ($("body").hasClass('snakeplant'))
+		$("body").removeClass('snakeplant');
+	if ($("body").hasClass('tradescantia'))
+		$("body").removeClass('tradescantia');
+	if ($("body").hasClass('ficuselastica'))
+		$("body").removeClass('ficuselastica');
 });
 
 // can i DRY this out? 
@@ -38,7 +44,7 @@ $('#sansevieria_button').click(function(){
 		name: "Sansevieria Plant",
 		user_id: "plant1"
 	}
-	$("body").toggleClass('snakeplant');
+	$("body").addClass('snakeplant');
 	Intercom('boot', settings);
 });
 
@@ -49,7 +55,7 @@ $('#tradescantia_button').click(function(){
 		name: "Tradescantia Plant",
 		user_id: "plant2"
 	}
-	$("body").toggleClass('tradescantia')
+	$("body").addClass('tradescantia')
 	Intercom('boot', settings);
 });
 
@@ -60,7 +66,7 @@ $('#ficus_elastica_button').click(function(){
 		name: "Ficus Elastica Plant",
 		user_id: "plant3"
 	}
-	$("body").toggleClass('ficuselastica')
+	$("body").addClass('ficuselastica')
 	Intercom('boot', settings);
 });
 
